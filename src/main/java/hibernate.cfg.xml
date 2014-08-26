@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="sessionFactory">
+        <property name="hibernate.connection.password">kamal</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/blog</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <mapping class="com.blog.entity.Admin"></mapping>
+        <mapping class="com.blog.entity.Ans_Blog"></mapping>
+        <mapping class="com.blog.entity.Answer"></mapping>
+        <mapping class="com.blog.entity.Blog"></mapping>
+        <mapping class="com.blog.entity.BlogUser"></mapping>
+        <mapping class="com.blog.entity.Category"></mapping>
+        <mapping class="com.blog.entity.Quest_Ans"></mapping>
+        <mapping class="com.blog.entity.Quest_Blog"></mapping>
+        <mapping class="com.blog.entity.Question"></mapping>
+        <mapping class="com.blog.entity.Role"></mapping>
+    </session-factory>
+</hibernate-configuration>
